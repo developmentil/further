@@ -1,4 +1,4 @@
-further.js
+[further.js](https://npmjs.org/package/further)
 ==========
 
 A lightweight library on Node.js
