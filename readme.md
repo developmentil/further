@@ -1,7 +1,7 @@
 [further.js](https://npmjs.org/package/further)
 ==========
 
-A lightweight library on Node.js
+A lightweight controllers library for [Express.js](http://expressjs.com/)
 
 
 Install
