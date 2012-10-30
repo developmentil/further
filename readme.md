@@ -1,7 +1,72 @@
 further.js
-================================
+==========
 
 A lightweight library on Node.js
+
+Install
+=======
+
+	$ npm install further
+
+Simple Usage
+=====
+
+```js
+var further = require('further'),
+	app = express();
+
+// Route "GET /"
+app.get('/', function(req, res){
+  res.send('Hello World');
+});
+
+// Route "POST /submit"
+app.post('/submit', function(req, res) {
+  res.send(req.body);
+});
+
+// Create an example controller
+var controller = new further.Controller('/admin');
+
+// Add a middleware before each controller request
+controller.before(function(req, res, next) {
+  req.user = 'UserObject';
+  next();
+});
+
+// Define a routing tag
+controller.tag('requireLogin', function(req, res, next) {
+  if(!req.user) {
+    next(new Error("Login Required!");
+    return;
+  }
+  
+  next();
+});
+
+// route "GET admin/" and require login!
+controller.get('/', 'requireLogin', function(req, res) {
+  res.send('Hello Admin');
+});
+
+// route "GET admin/login"
+controller.get('/login', function(req, res) {
+  res.send('Please Login');
+});
+
+// route "POST admin/login"
+controller.post('/login', function(req, res) {
+  res.send(req.body);
+});
+
+// Bind the controller routes
+further.setup({
+	app: app
+});
+
+// Start the application
+app.listen(3000);
+```
 
 
 Changelog
