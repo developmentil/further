@@ -1,0 +1,33 @@
+{
+  "name": "further",
+  "description": "A lightweight library on Node.js",
+  "version": "0.0.2",
+  "author": {
+    "name": "Moshe Simantov",
+    "email": "ms@development.co.il"
+  },
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "~3.0.0"
+  }
+  "devDependencies": {
+  },
+  "keywords": [
+    "express",
+    "controller",
+    "router",
+    "app",
+    "library",
+    "tags"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DevelopmentIL/further.git"
+  },
+  "main": "index",
+  "scripts": {
+    "prepublish": "npm prune"
+  }
+}
