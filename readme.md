@@ -1,4 +1,4 @@
-[further.js]
+further.js
 ================================
 
 A lightweight library on Node.js
