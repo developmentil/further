@@ -3,10 +3,12 @@
 
 A lightweight library on Node.js
 
+
 Install
 =======
 
 	$ npm install further
+
 
 Simple Usage
 =====
@@ -44,17 +46,17 @@ controller.tag('requireLogin', function(req, res, next) {
   next();
 });
 
-// route "GET admin/" and require login!
+// Route "GET /admin/" and require login!
 controller.get('/', 'requireLogin', function(req, res) {
   res.send('Hello Admin');
 });
 
-// route "GET admin/login"
+// Route "GET /admin/login"
 controller.get('/login', function(req, res) {
   res.send('Please Login');
 });
 
-// route "POST admin/login"
+// Route "POST /admin/login"
 controller.post('/login', function(req, res) {
   res.send(req.body);
 });
@@ -75,6 +77,7 @@ Changelog
 ### 0.1.0
 
 Initial release
+
 
 License
 =======
