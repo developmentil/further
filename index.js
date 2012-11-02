@@ -1,5 +1,8 @@
-var express = require('express');
+var further = module.exports;
 
-module.exports.Controller = require('./lib/controller');
+further.registery = require('./lib/registery');
 
-module.exports.setup = require('./lib/setup');
+further.Controller = require('./lib/controller');
+further.setup = require('./lib/setup');
+further.requires = require('./lib/requires');
+further.require = require('./lib/require');
