@@ -71,6 +71,12 @@ app.listen(3000);
 ```
 
 
+Simple Usage
+=====
+
+More examples can be found under [further-examples](https://github.com/DevelopmentIL/further-examples).
+
+
 Changelog
 =========
 
