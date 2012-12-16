@@ -10,7 +10,6 @@
     "start": "node app"
   },
   "dependencies": {
-	  "async": "~0.1.22"
   },
   "devDependencies": {
   },

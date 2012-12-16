@@ -1,5 +1,8 @@
 var further = module.exports;
 
+further.extend = require('./lib/extend');
+
+further.reg = 
 further.registery = require('./lib/registery');
 
 further.Serial = require('./lib/tasks/serial');
