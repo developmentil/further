@@ -1,7 +1,7 @@
 {
   "name": "further",
   "description": "A lightweight library on Node.js",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "author": {
     "name": "Moshe Simantov",
     "email": "ms@development.co.il"
