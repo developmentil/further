@@ -10,6 +10,7 @@
     "start": "node app"
   },
   "dependencies": {
+    "debug": "*"
   },
   "devDependencies": {
   },
