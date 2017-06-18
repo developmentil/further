@@ -13,8 +13,7 @@
   "dependencies": {
     "debug": "*"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "keywords": [
     "express",
     "controller",
